@@ -1,0 +1,202 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+@brandColor: #ffc460;
+@maxView: 100vh;
+@footerSize: 4vh;
+@navSize: 10vh;
+@separation: 2.5vh;
+
+.padMar(@fill: 0px, @space: 0px) {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+
+  .padMar();
+  min-height: calc(@maxView - @separation);
+  max-height: calc(@maxView - @separation);
+  max-width: 100vw;
+  background-color: brown;
+
+  nav {
+    .imgSize(@imgWidth: 90px, @imgHeight: 90px) {
+      max-width: @imgWidth;
+      height: @imgHeight;
+      margin-top: @separation;
+    }
+
+    background-color: lighten(#000, 25%);
+    //background-color: #ffc460;
+    max-width: 100vw;
+    height: @navSize;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      color: #dddddd;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: #dddddd;
+    }
+
+    .flex-logo {
+      width: 100px;
+      margin: 30px;
+      display: flex;
+      align-items: flex-end;
+
+    .logo {
+      .imgSize();
+
+      img {
+        .imgSize();
+        border-radius: 50%;
+        border: 2px solid #fff3e0;
+        background-color: white;
+      }
+      }
+    }
+
+    .flex-box(@direction: row) {
+      width: 400px;
+      display: flex;
+      justify-content: flex-end;
+      align-self: flex-end;
+      flex-direction: @direction;
+      font-weight: 200;
+      margin-bottom: 5px;
+
+      ul {
+        list-style-type: none;
+        .padMar();
+      }
+      li {
+        display: inline;
+        color: #dddddd;
+        margin: 0 10px;
+        font-size: 15px;
+        letter-spacing: 1.5px;
+      }
+    }
+
+      .box1 {
+        .flex-box();
+      }
+
+      .box2 {
+        .flex-box(row-reverse);
+      }
+    }
+
+  .generic(@secWidth: 100vw) {
+    min-height: calc(@maxView - @navSize);
+    max-width: @secWidth;
+    .padMar();
+    display: flex;
+  }
+
+  section.first {
+    .generic();
+    background-image: url('../img/gatites.jpg');
+    background-position: center;
+    background-size: 100%;
+    justify-content: flex-start;
+    align-items: center;
+
+    .box {
+      width: 60vw;
+      height: 60vh;
+      margin-left: @footerSize;
+      display: flex;
+    }
+    .opacity-box {
+      background: rgba(0,0,0,0.5);
+      align-self: flex-end;
+      padding: @separation;
+    }
+  }
+
+  section.second {
+    .generic();
+    background-color: #ffc460;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.9em;
+    text-align: center;
+
+    .col {
+      width: 300px;
+      height: 300px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      .circle {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 7px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h2 {
+        font-size: 1.5em;
+        line-height: 1em;
+        margin: 0;
+      }
+
+      hr {
+        width: 100px;
+        border: 3px solid darken(#ffc460, 20%);
+      }
+    }
+  }
+
+  section.third {
+    .generic();
+    background-color: rgba(0,0,0,0.8);
+    color: #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .box-quote {
+      width: 400px;
+      font-size: 3em;
+      line-height: 1.5em;
+      font-style: italic;
+    }
+
+    .box-text {
+      width: 500px;
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+
+  }
+
+  h1 {
+    font-size: 2.5em;
+    color: white;
+  }
+
+  footer {
+    max-width: 100vw;
+    height: @footerSize;
+    background-color: orchid;
+    .padMar();
+  }
+}
