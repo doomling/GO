@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Gatitos Online</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i" rel="stylesheet">
@@ -12,23 +12,41 @@
         <nav>
             <div class="box1">
                 <ul id="nav1">
-                    <li><a href="index.html" id="who" >¿Quienes somos?</a></li>
-                    <li>Nuestro trabajo</li>
+                    <li>
+                      <a href="#who" >
+                        ¿Quienes somos?
+                      </a>
+                    </li>
+                    <a href="#work">
+                      <li>
+                        Nuestro trabajo
+                      </li>
+                    </a>
                 </ul>
                 </div>
             <div class="flex-logo">
                 <div class="logo">
-                    <img src="img/avatar_circulo.png">
+                    <a href="#intro">
+                      <img src="img/avatar_circulo.png">
+                    </a>
                 </div>
             </div>
                 <div class="box2">
                     <ul id="nav2">
-                    <li>Cómo ayudar</li>
-                    <li>Noticias</li>
+                    <a href="#don">
+                      <li>
+                        Cómo ayudar
+                      </li>
+                    </a>
+                    <a href="#img">
+                    <li>
+                      Noticias
+                    </li>
+                  </a>
                   </ul>
                 </div>
         </nav>
-        <section class="first">
+        <section class="first" id="intro">
             <div class="box">
                 <div class="opacity-box" id="slogan">
                 <h1>Trabajamos para mejorar la calidad de vida en la Colonia de Patricios
@@ -36,8 +54,7 @@
                 </div>
             </div>
         </section>
-        <footer>aaa</footer>
-        <section class="third">
+        <section class="third" id="who">
             <div class="box-quote">
                 <span id="quote" class="hidden">
                     "El gato es el único animal que ha logrado domesticar al hombre." - Marcel Mauss
@@ -58,7 +75,7 @@
 
             </div>
         </section>
-        <section class="second">
+        <section class="second" id="work">
             <div class="col">
                 <div class="circle">
                     <span class="back"><img src="img/sun.svg"></span>
@@ -104,7 +121,7 @@
                 </span>
             </div>
         </section>
-        <section class="fourth">
+        <section class="fourth" id="don">
           <div class="donacion-text">
             <h3>¿Querés ayudarnos? Tu donación nos permite continuar nuestro esfuerzo de castración, recuperación y rescate de gatos en la colonia de Parque Patricios.</h3>
             <p> Podés hacer una donación única o sumarte a nuestro madrinazgo mensual. En cualquiera de los dos casos el aporte es a voluntad</p>
@@ -133,8 +150,7 @@
             <div class="plan">
               <div class="border">
               <div class="plan-content">
-                <h3>Madrinazgo mensual</h3>
-                <hr>
+                <h3>Madrinazgo mensual</fifth              <hr>
                 <p>
                   Doná directamente desde tu celular
                 </p>
@@ -147,7 +163,17 @@
               </div>
             </div>
         </section>
-        <footer>aaa</footer>
+        <section class="fifth" id="img">
+          <h2> Algunas imágenes de la colonia </h2>
+            <div id="slider" class="slider">
+              <img src="img/avatar_circulo.png" id="img0">
+            </div>
+        </section>
+        <footer>
+          <small>2018 - Made with love by
+          <a href="https://github.com/doomling">@iamdoomling</a>
+        </small>
+        </footer>
     </div>
     <script
 src="https://code.jquery.com/jquery-3.3.1.min.js"

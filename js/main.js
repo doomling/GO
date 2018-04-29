@@ -18,6 +18,29 @@ $(document).on('load' , onViewport("#box-text", "active", 0, function() {
 $(document).on('load' ,  function() {
   $('#slogan').addClass('fadein');
 });
+/*
+$(document).on('scroll' , onViewport("h3", "active", 0, function() {
+  $('#fifth').scrollTop();
+  $(document).
+}));
+*/
+let counter = 1;
+$('#slider').on('click', function() {
+  console.log(counter);
+  //const item = $('#img0');
+  //$('#img0').addClass('hidden');
+  if (counter <= 3) {
+  $('#img' + (counter - 1)).remove();
+  $('#slider').append('<img src="img/'+ counter +'.jpg" id="img'+ counter +'">');
+  counter++;
+} else {
+  $('#img' + (counter - 1)).remove();
+  counter = 1;
+    $('#slider').append('<img src="img/avatar_circulo.png" id="img0">');
+}
+});
+
+//third party css
 
 function onViewport(el, elClass, offset, callback) {
   /*** Based on http://ejohn.org/blog/learning-from-twitter/ ***/
@@ -52,5 +75,6 @@ function onViewport(el, elClass, offset, callback) {
   }, 100);
 }
 
-// mercado pago
+/* mercado pago
 (function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})();
+*/
