@@ -164,6 +164,37 @@ body {
   padding: 0;
   margin: 0;
   padding-top: 10vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #dddddd;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.container section.second .box-quote {
+  width: 37vw;
+  margin-right: 20px;
+  font-size: 3em;
+  line-height: 1.5em;
+  font-style: italic;
+  position: relative;
+  animation-name: boxQuote;
+  animation-duration: 5s;
+}
+.container section.second .box-text {
+  width: 37vw;
+  font-size: 1em;
+  line-height: 1.5em;
+  position: relative;
+  animation-name: boxText, opacity;
+  animation-duration: 5s;
+}
+.container section.third {
+  min-height: calc(100vh - 10vh);
+  max-width: 100vw;
+  padding: 0;
+  margin: 0;
+  padding-top: 10vh;
   display: flex;
   background-color: #ffc460;
   justify-content: space-around;
@@ -171,7 +202,7 @@ body {
   font-size: 0.9em;
   text-align: center;
 }
-.container section.second .col {
+.container section.third .col {
   width: 300px;
   height: 300px;
   padding: 10px;
@@ -185,7 +216,7 @@ body {
     transform: rotate(360deg);
   }
 }
-.container section.second .col .circle {
+.container section.third .col .circle {
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -196,69 +227,38 @@ body {
   justify-content: center;
   transition: width height 2s;
 }
-.container section.second .col .circle img {
+.container section.third .col .circle img {
   width: 80px;
   height: auto;
   z-index: 1;
 }
-.container section.second .col .circle .back {
+.container section.third .col .circle .back {
   position: absolute;
   z-index: 0;
 }
-.container section.second .col .circle .back img {
-  width: 200px;
+.container section.third .col .circle .back img {
+  width: 150px;
   height: auto;
-  opacity: 0.5;
+  opacity: 0.8;
 }
-.container section.second .col .circle .back:hover {
+.container section.third .col .circle .back:hover {
   animation: spin 10s linear infinite;
 }
-.container section.second .col div:hover {
+.container section.third .col div:hover {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.3);
 }
-.container section.second .col div:hover img {
+.container section.third .col div:hover img {
   width: 100px;
 }
-.container section.second .col h2 {
+.container section.third .col h2 {
   font-size: 1.5em;
   line-height: 1em;
-  margin: 0;
+  margin-top: 2.5vh;
 }
-.container section.second .col hr {
+.container section.third .col hr {
   width: 100px;
   border: 3px solid #f99d00;
-}
-.container section.third {
-  min-height: calc(100vh - 10vh);
-  max-width: 100vw;
-  padding: 0;
-  margin: 0;
-  padding-top: 10vh;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #dddddd;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-}
-.container section.third .box-quote {
-  width: 37vw;
-  margin-right: 20px;
-  font-size: 3em;
-  line-height: 1.5em;
-  font-style: italic;
-  position: relative;
-  animation-name: boxQuote;
-  animation-duration: 5s;
-}
-.container section.third .box-text {
-  width: 37vw;
-  font-size: 1em;
-  line-height: 1.5em;
-  position: relative;
-  animation-name: boxText, opacity;
-  animation-duration: 5s;
 }
 .container section.fourth {
   min-height: calc(100vh - 10vh);
@@ -269,8 +269,8 @@ body {
   display: flex;
   background-color: white;
   background-image: url('../img/gatites.jpg');
-  padding: 0 10px;
-  justify-content: space-between;
+  padding: 0 2.5vh;
+  justify-content: center;
   align-items: center;
   font-size: 1em;
   text-align: center;
@@ -280,11 +280,12 @@ body {
   width: 50%;
   background-color: #ffc460;
   text-align: left;
+  margin-right: 2.5vh;
 }
 .container .donacion-text img {
-  width: 120px;
+  width: 180px;
   height: auto;
-  transform: rotateX(190deg);
+  margin-right: 2.5vh;
   display: block;
   float: right;
 }
@@ -388,7 +389,10 @@ body {
   background-color: #404040;
   padding: 0;
   margin: 0;
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 2.5vh;
 }
 .container footer a,
 .container footer a:visited {

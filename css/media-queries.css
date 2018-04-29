@@ -1,0 +1,107 @@
+@media screen and (min-width: 400px) and (max-width: 750px) {
+  .container nav {
+    height: 8vh;
+  }
+  .container section.first {
+    background-position: center;
+    background-size: auto 100vh;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .container section.first .box {
+    width: 40vw;
+    height: 40vh;
+    margin-left: 4vh;
+    display: flex;
+  }
+  .container section.fourth {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container section.fourth .planes {
+    margin-top: 0;
+  }
+  .container section.fourth .plan {
+    width: 260px;
+  }
+  .container section.fourth .plan-content {
+    width: 250px;
+    background-color: yellow;
+  }
+  .container section.fourth .donacion-text {
+    margin-right: 0;
+    text-align: center;
+  }
+  .container section.fourth .donacion-text .arrow {
+    display: none;
+  }
+}
+@media screen (min-width: 800px) and (max-width: 1024px) {
+  .container section.fourth {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container section.fourth .planes {
+    margin-top: 0;
+  }
+  .container section.fourth .plan {
+    width: 260px;
+  }
+  .container section.fourth .plan-content {
+    width: 250px;
+  }
+  .container section.fourth .donacion-text {
+    margin-right: 0;
+    text-align: center;
+  }
+  .container section.fourth .donacion-text .arrow {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1366px) {
+  .container section.second .box-quote {
+    font-size: 3em;
+  }
+  .container section.second .box-text {
+    font-size: 1.2em;
+    line-height: 1.2em;
+  }
+  .container section.fourth .plan {
+    width: 200px;
+  }
+  .container section.fourth .plan-content {
+    width: 200px;
+  }
+}
+@media (min-width: 1800px) {
+  .container nav .flex-logo .logo img {
+    border: 4px solid #fff3e0;
+  }
+  .container nav .box2 li {
+    font-size: 1.2em;
+  }
+  .container nav .box1 li {
+    font-size: 1.2em;
+  }
+  .container section.second .box-quote {
+    font-size: 4em;
+  }
+  .container section.second .box-text {
+    font-size: 1.2em;
+    line-height: 1.7em;
+  }
+  .container section.fourth {
+    font-size: 1.3em;
+  }
+  .container section.fourth .plan {
+    height: 60vh;
+    width: 350px;
+  }
+  .container section.fourth .plan-content {
+    width: 310px;
+    height: 50vh;
+  }
+  .container section.fourth .plan-content img {
+    width: 200px;
+  }
+}

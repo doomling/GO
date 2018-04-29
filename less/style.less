@@ -182,6 +182,36 @@ body {
 
   section.second {
     .generic();
+    background-color: rgba(0,0,0,0.8);
+    color: #dddddd;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    .box-quote {
+      width: 37vw;
+      margin-right: 20px;
+      font-size: 3em;
+      line-height: 1.5em;
+      font-style: italic;
+      position: relative;
+      animation-name: boxQuote;
+      animation-duration: 5s;
+    }
+
+    .box-text {
+      width: 37vw;
+      font-size: 1em;
+      line-height: 1.5em;
+      position: relative;
+      animation-name: boxText, opacity;
+      animation-duration: 5s;
+    }
+  }
+
+  section.third {
+    .generic();
     background-color: #ffc460;
     justify-content: space-around;
     align-items: center;
@@ -214,9 +244,9 @@ body {
             position: absolute;
             z-index: 0;
             img {
-              width: 200px;
+              width: 150px;
               height: auto;
-              opacity: 0.5;
+              opacity: 0.8;
             }
           }
 
@@ -236,7 +266,7 @@ body {
       h2 {
         font-size: 1.5em;
         line-height: 1em;
-        margin: 0;
+        margin-top: @separation;
       }
 
       hr {
@@ -246,42 +276,12 @@ body {
     }
   }
 
-  section.third {
-    .generic();
-    background-color: rgba(0,0,0,0.8);
-    color: #dddddd;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-
-    .box-quote {
-      width: 37vw;
-      margin-right: 20px;
-      font-size: 3em;
-      line-height: 1.5em;
-      font-style: italic;
-      position: relative;
-      animation-name: boxQuote;
-      animation-duration: 5s;
-    }
-
-    .box-text {
-      width: 37vw;
-      font-size: 1em;
-      line-height: 1.5em;
-      position: relative;
-      animation-name: boxText, opacity;
-      animation-duration: 5s;
-    }
-  }
-
   section.fourth {
     .generic();
     background-color: white; //#574c4f;
     background-image: url('../img/gatites.jpg');
-    padding: 0 10px;
-    justify-content: space-between;
+    padding: 0 @separation;
+    justify-content: center;
     align-items: center;
     font-size: 1em;
     text-align: center;
@@ -293,11 +293,13 @@ body {
       width: 50%;
       background-color: #ffc460;
       text-align: left;
+      margin-right: @separation;
 
     img {
-      width: 120px;
+      width: 180px;
       height: auto;
-      transform: rotateX(190deg);
+      margin-right: @separation;
+    //  transform: rotateX(190deg);
       display: block;
       float: right;
       }
@@ -401,7 +403,10 @@ body {
     height: @footerSize;
     background-color: lighten(#000, 25%);
     .padMar();
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: @separation;
     a, a:visited {
       color: #c60596
     }
