@@ -5,6 +5,7 @@
   }
   .container nav {
     height: 8vh;
+    padding-bottom: 10px;
   }
   .container nav .box1,
   .container nav .box2 {
