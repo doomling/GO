@@ -27,6 +27,11 @@ body {
   to {bottom:0}
   }
 
+  @keyframes bounce {
+   from {bottom: 50px}
+   to {bottom:10px}
+   }
+
  .fadein {
    animation-name: opacity;
    animation-duration: 3s;
@@ -203,6 +208,33 @@ body {
     }
     // end responsive menu
 
+    // social
+    .float-social {
+      height: 300px;
+      position: fixed;
+      top: 10vh;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      z-index: 3;
+
+      .social-container {
+        display: flex;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: #000;
+        margin-top: 10px;
+        padding: 5px;
+
+      img {
+        margin-top: 5px;
+        height: 80%;
+        }
+      }
+    }
+    //
+
   .generic(@secWidth: 100vw) {
     min-height: calc(@maxView - @navSize);
     max-width: @secWidth;
@@ -237,6 +269,15 @@ body {
     }
     .opacity-box {
       .opacityBox();
+    }
+
+    .scroll-icon {
+      height: 40px;
+      width: 40px;
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      animation: bounce 0.8s ease-out infinite;
     }
   }
 
@@ -440,7 +481,6 @@ body {
     h2 {
       color: #fff;
       margin: 0;
-      align-self: flex-start;
     }
 
   .slider {
