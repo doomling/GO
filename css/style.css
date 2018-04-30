@@ -283,6 +283,11 @@ body {
   animation-name: boxText, opacity;
   animation-duration: 5s;
 }
+.container section.second .box-text a,
+.container section.second .box-text a:visited,
+.container section.second .box-text a:hover {
+  color: #ffc460;
+}
 .container section.third {
   min-height: calc(100vh - 10vh);
   max-width: 100vw;
@@ -490,4 +495,9 @@ body {
 .container footer a,
 .container footer a:visited {
   color: #c60596;
+}
+.container footer img {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
 }
