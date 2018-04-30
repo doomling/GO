@@ -1,4 +1,4 @@
-@media screen and (min-width: 400px) and (max-width: 750px) {
+@media screen and (max-width: 750px) and (min-width: 300px) {
   .container {
     min-height: 100vh;
     max-height: 100vh;
@@ -22,7 +22,7 @@
   .container section.first .box {
     width: 40vw;
     height: 40vh;
-    margin-left: 4vh;
+    margin-left: 2.5vh;
     display: flex;
   }
   .container section.second {
@@ -76,6 +76,7 @@
     position: relative;
   }
   .container section.fifth h2 {
+    font-size: 1.2em;
     margin: 2vh 0;
     align-self: center;
   }
