@@ -13,6 +13,7 @@
   .container nav .hamburger-icon {
     display: block;
   }
+  .container .scroll-icon,
   .container .float-social {
     display: none;
   }
