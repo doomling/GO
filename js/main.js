@@ -14,12 +14,12 @@ let counter = 1;
 $('#slider').on('click', function() {
   if (counter <= 5) {
   $('#img' + (counter - 1)).remove();
-  $('#slider').append('<img src="img/'+ counter +'.jpg" id="img'+ counter +'">');
+  $('#slider').append('<img src="img/jpg/'+ counter +'.jpg" id="img'+ counter +'">');
   counter++;
 } else {
   $('#img' + (counter - 1)).remove();
   counter = 1;
-    $('#slider').append('<img src="img/0.jpg" id="img0">');
+    $('#slider').append('<img src="img/jpg/0.jpg" id="img0">');
 }
 });
 
