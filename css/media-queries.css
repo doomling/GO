@@ -60,6 +60,10 @@
   }
   .container section.fourth .plan-content {
     width: 70vw;
+    justify-content: center;
+  }
+  .container section.fourth .plan-content img {
+    width: 80%;
   }
   .container section.fourth .donacion-text {
     width: 80vw;

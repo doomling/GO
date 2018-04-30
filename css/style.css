@@ -395,7 +395,7 @@ body {
   flex-wrap: wrap;
 }
 .container .plan {
-  height: 400px;
+  height: auto;
   width: 230px;
   padding: 20px;
   background-color: #ffc460;
@@ -407,11 +407,11 @@ body {
 }
 .container .plan-content {
   width: 210px;
-  height: 300px;
+  height: auto;
   text-align: center;
 }
 .container .plan-content img {
-  width: 80px;
+  width: 80%;
   height: auto;
   display: inline-block;
 }
