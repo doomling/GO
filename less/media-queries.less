@@ -10,9 +10,14 @@
       min-height: @maxView;
     }
     .container {
+      min-height: @maxView;
+      max-height: @maxView;
       nav {
         height: @navSize;
-      }
+        .box1, .box2 {
+          display: none;
+        }
+      } // end nav
 
     section.first {
       background-position:center;
@@ -26,19 +31,67 @@
         margin-left: @footerSize;
         display: flex;
       }
-    }
+    } // end first
+    section.second {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .box-text, .box-quote {
+        width: 90vw;
+        font-size: 1em;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+    } // end second
+    section.third {
+      padding-top:2vh;
+      flex-direction: column;
+      justify-content: center;
+    } // end third
     section.fourth {
+      padding-top:2vh;
       flex-direction: column;
       justify-content: center;
         .planes {margin-top: 0}
-        .plan { width: 260px;}
-        .plan-content { width: 250px; background-color: yellow}
-        .donacion-text { margin-right: 0; text-align: center;
+        .plan { width: 80vw;}
+        .plan-content { width: 70vw; }
+        .donacion-text {
+          width: 80vw;
+          margin-right: 0;
+          text-align: center;
+          margin-top: 0;
           .arrow {display: none}
         }
+    } // end fourth
+    section.fifth {
+      margin: 0;
+      padding: 0;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left:0;
+      position: relative;
+
+      h2 {
+        margin: 2vh 0;
+        align-self: center;
+      }
+      .slider {
+        margin: 0;
+        padding: 0;
+        width: 90vw;
+        img {
+          width: auto;
+          height: 100%;
+          position: relative;
+          left: -70%;
+        }
+      }
     }
-  }
-}
+  } // end container
+} // end mobile responsive
 
 // smallish desktop
   @media screen (min-width: 800px) and (max-width: 1024px) {

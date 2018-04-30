@@ -1,6 +1,14 @@
 @media screen and (min-width: 400px) and (max-width: 750px) {
+  .container {
+    min-height: 100vh;
+    max-height: 100vh;
+  }
   .container nav {
     height: 8vh;
+  }
+  .container nav .box1,
+  .container nav .box2 {
+    display: none;
   }
   .container section.first {
     background-position: center;
@@ -14,7 +22,26 @@
     margin-left: 4vh;
     display: flex;
   }
+  .container section.second {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container section.second .box-text,
+  .container section.second .box-quote {
+    width: 90vw;
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .container section.third {
+    padding-top: 2vh;
+    flex-direction: column;
+    justify-content: center;
+  }
   .container section.fourth {
+    padding-top: 2vh;
     flex-direction: column;
     justify-content: center;
   }
@@ -22,18 +49,43 @@
     margin-top: 0;
   }
   .container section.fourth .plan {
-    width: 260px;
+    width: 80vw;
   }
   .container section.fourth .plan-content {
-    width: 250px;
-    background-color: yellow;
+    width: 70vw;
   }
   .container section.fourth .donacion-text {
+    width: 80vw;
     margin-right: 0;
     text-align: center;
+    margin-top: 0;
   }
   .container section.fourth .donacion-text .arrow {
     display: none;
+  }
+  .container section.fifth {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0;
+    position: relative;
+  }
+  .container section.fifth h2 {
+    margin: 2vh 0;
+    align-self: center;
+  }
+  .container section.fifth .slider {
+    margin: 0;
+    padding: 0;
+    width: 90vw;
+  }
+  .container section.fifth .slider img {
+    width: auto;
+    height: 100%;
+    position: relative;
+    left: -70%;
   }
 }
 @media screen (min-width: 800px) and (max-width: 1024px) {
